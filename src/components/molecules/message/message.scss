@@ -1,4 +1,4 @@
-.text-wrap-title-lg {
+.text-wrap-title {
   position: static;
   width: 287px;
   height: 54px;
@@ -15,6 +15,14 @@
   text-align: center;
 
   color: #000000;
+}
+@media screen and (max-width: 800px) {
+  .text-wrap-title {
+    width: 160px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .text-wrap-lg {
@@ -35,49 +43,10 @@
 
   color: #000000;
 }
-
-.text-wrap-title-md {
-  position: static;
-  width: 160px;
-  height: 30px;
-  margin: 0 auto;
-
-  font-family: Noto Serif JP;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #000000;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.text-wrap-md {
-  position: static;
-  width: 84px;
-  height: 28px;
-  margin: 0 auto;
-
-  font-family: Noto Sans JP;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 28px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #000000;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+@media screen and (max-width: 800px) {
+  .text-wrap {
+    width: 84px;
+    height: 28px;
+    line-height: 28px;
+  }
 }
