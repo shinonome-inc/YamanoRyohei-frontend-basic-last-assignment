@@ -1,0 +1,83 @@
+.text-wrap-title-lg {
+  position: static;
+  width: 287px;
+  height: 54px;
+  margin: 0 auto;
+
+  font-family: Noto Serif JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 54px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.text-wrap-lg {
+  position: static;
+  width: 84px;
+  height: 36px;
+  margin: 0 auto;
+
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 36px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.text-wrap-title-md {
+  position: static;
+  width: 160px;
+  height: 30px;
+  margin: 0 auto;
+
+  font-family: Noto Serif JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.text-wrap-md {
+  position: static;
+  width: 84px;
+  height: 28px;
+  margin: 0 auto;
+
+  font-family: Noto Sans JP;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
