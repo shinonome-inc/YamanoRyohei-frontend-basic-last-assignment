@@ -1,10 +1,10 @@
 $white: #ffffff;
-$smoke-white: #f5f5f5;
-$gray-white: #ece9e6;
-$gray: #dddddd;
-$gray-mouse: #999999;
-$brown: #a19283;
-$darkbrown: #442606;
+$white-smoke: #f5f5f5;
+$gray-desertstorm: #ece9e6;
+$gray-gainsboro: #dddddd;
+$gray-nobel: #999999;
+$orange-zorba: #a19283;
+$orange-bistre: #442606;
 $black-50: rgba(0, 0, 0, 0.5);
 $black: #000000;
 
@@ -15,4 +15,13 @@ $fontsize-xl: 36px;
 $fontsize-xxl: 40px;
 
 $fontfamily-mincho: "Noto Serif JP";
-$fontfamily-gothic: "sans-serif";
+$fontfamily-gothic: "Noto Sans JP", "Roboto";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
