@@ -1,5 +1,7 @@
 /* 使用例 */
+body{
+  $font-family: fontfamily-gothic;
+}
 h2 {
-  font-family: fontfamily-gothic;
-  font-size: 38px;
+  $font-size: 38px;
 }
