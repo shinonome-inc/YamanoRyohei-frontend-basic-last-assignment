@@ -1,4 +1,6 @@
-/* 使用例 */
+@use "variables" as v;
+
+
 body{
   font-family: $fontfamily-gothic;
 }
