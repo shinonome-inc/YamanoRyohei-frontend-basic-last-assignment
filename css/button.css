@@ -1,33 +1,33 @@
-@use "../../variables" as *;
-
 .button {
   width: 180px;
   height: 45px;
-  background-color: $black;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 16px;
-  color: $white;
+  color: #ffffff;
   font-size: 14px;
   border: 0mm;
   transition: 0.2s ease;
-
-  &:hover {
-    background-color: $orange-bistre;
-    color: $white;
-    text-decoration: none;
-  }
 }
-@media screen and (min-width: $grid-breakpoints-md) {
+.button:hover {
+  background-color: #442606;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
   .button {
     width: 150px;
     height: 55px;
   }
 }
-@media screen and (min-width: $grid-breakpoints-lg) {
+@media screen and (min-width: 992px) {
   .button {
     width: 200px;
     height: 55px;
   }
 }
+
+/*# sourceMappingURL=button.css.map */
