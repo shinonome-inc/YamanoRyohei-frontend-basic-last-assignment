@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../src/components/molecules/message/message.scss","../src/components/_variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA,aCekB;EDdlB,WCUW;EDTX,OCIM;;ADHN;EALF;IAMI;IACA,WCOU;;;;ADHd;EACE;EACA;EACA,aCGkB;EDFlB,WCJW;EDKX,OCRM;;ADSN;EANF;IAOI","file":"message.css"}
