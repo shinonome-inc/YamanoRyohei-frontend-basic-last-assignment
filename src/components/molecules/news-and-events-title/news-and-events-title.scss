@@ -14,8 +14,8 @@
   &-Ja {
     font-family: $fontfamily-gothic;
     padding: 3px 0 35px 0;
+    font-size: $fontsize-m;
     @media screen and (min-width: $grid-breakpoints-lg) {
-      font-size: $fontsize-m;
       padding: 35px 0 71px 0;
     }
   }

@@ -13,10 +13,10 @@
 .news-and-events-title-Ja {
   font-family: "Roboto", "Noto Sans JP", "sans-serif";
   padding: 3px 0 35px 0;
+  font-size: 16px;
 }
 @media screen and (min-width: 992px) {
   .news-and-events-title-Ja {
-    font-size: 16px;
     padding: 35px 0 71px 0;
   }
 }
