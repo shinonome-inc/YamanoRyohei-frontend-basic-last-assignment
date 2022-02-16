@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../src/components/molecules/news-and-events-title/news-and-events-title.scss","../src/components/_variables.scss"],"names":[],"mappings":"AAGE;EACE,aCegB;EDdhB;EACA,WCSS;EDRT;;AACA;EALF;IAMI,WCQS;IDPT;;;AAGJ;EACE,aCMgB;EDLhB;;AACA;EAHF;IAII,WCHO;IDIP","file":"news-and-events-title.css"}
