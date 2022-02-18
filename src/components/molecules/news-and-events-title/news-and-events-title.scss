@@ -1,11 +1,11 @@
 @use "../../variables" as *;
 
 .news-and-events-title {
+  display: flex;
+  align-items: center;
   &-En {
     font-family: $fontfamily-mincho;
-    float: left;
     font-size: $fontsize-l;
-    margin-right: 16px;
     margin-bottom: 0;
     @media screen and (min-width: $grid-breakpoints-lg) {
       font-size: $fontsize-xxl;
@@ -13,12 +13,9 @@
   }
   &-Ja {
     font-family: $fontfamily-gothic;
-    padding-top: 3px;
-    margin: 0;
-
+    margin-left: 16px;
     font-size: $fontsize-m;
     @media screen and (min-width: $grid-breakpoints-lg) {
-      padding-top: 15px;
     }
   }
 }
