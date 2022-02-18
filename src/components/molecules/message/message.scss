@@ -1,23 +1,24 @@
 @use "../../variables" as *;
 
-.message-title {
-  margin: 12px 12.5px 8px 12.5px;
-  font-family: $fontfamily-mincho;
-  font-size: $fontsize-l;
-  color: $black;
-  @media screen and (min-width: $grid-breakpoints-md) {
-    margin: 52px 20px 10px 20px;
-    font-size: $fontsize-xl;
+.message {
+  &-title {
+    margin-bottom: 6px;
+    text-align: center;
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-l;
+    color: $black;
+    @media screen and (min-width: $grid-breakpoints-md) {
+      margin-bottom: 8px;
+      font-size: $fontsize-xl;
+    }
   }
-}
-
-.message-content {
-  margin: 0px 50.5px 10px 50.5px;
-  padding: 0;
-  font-family: $fontfamily-mincho;
-  font-size: $fontsize-s;
-  color: $black;
-  @media screen and (min-width: $grid-breakpoints-md) {
-    margin: 0px 121.5px 52px 121.5px;
+  &-content {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-s;
+    color: $black;
+    @media screen and (min-width: $grid-breakpoints-md) {
+    }
   }
 }
