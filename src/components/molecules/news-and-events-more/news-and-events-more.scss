@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+
+.more-btn {
+  margin-left: 2px;
+  color: $black;
+  font-size: $fontsize-s;
+  font-family: $fontfamily-gothic;
+  transition: 0.2s ease;
+  &:hover {
+    color: $gray-nobel;
+    text-decoration: none;
+  }
+}
+.fas {
+  margin-left: 16px;
+}
