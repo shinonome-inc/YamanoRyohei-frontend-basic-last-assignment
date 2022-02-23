@@ -1,22 +1,20 @@
 @use "../../variables" as *;
 
 .message {
+  text-align: center;
+  font-family: $fontfamily-mincho;
+  color: $black;
   &-title {
     margin-bottom: 6px;
-    text-align: center;
-    font-family: $fontfamily-mincho;
     font-size: $fontsize-l;
-    color: $black;
+
     @media screen and (min-width: $grid-breakpoints-md) {
       margin-bottom: 8px;
       font-size: $fontsize-xl;
     }
   }
   &-content {
-    text-align: center;
-    font-family: $fontfamily-mincho;
     font-size: $fontsize-s;
-    color: $black;
     margin-bottom: 0;
   }
 }
