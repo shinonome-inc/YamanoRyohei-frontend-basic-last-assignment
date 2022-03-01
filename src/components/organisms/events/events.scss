@@ -1,0 +1,73 @@
+@use "../../variables" as *;
+
+.events {
+  &-list {
+    width: 100%;
+    padding-left: 0;
+    &-bg {
+      background-color: $white;
+      border: 1px solid $gray-gainsboro;
+      list-style-type: none;
+      margin-top: -1px;
+    }
+    &-ctn {
+      overflow: hidden;
+      display: flex;
+      transition-duration: 0.2s;
+      &:hover {
+        text-decoration: none;
+      }
+      &:hover .events-img-ctn {
+        transform: scale(1.2);
+        transition-duration: 0.2s;
+        overflow: hidden;
+      }
+    }
+    &-date {
+      color: $gray-nobel;
+      display: block;
+      font-size: $fontsize-xs;
+    }
+    &-article {
+      padding: 10px 20px 16px;
+      @media screen and (min-width: $grid-breakpoints-md) {
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      &-title {
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 6px;
+        font-size: $fontsize-s;
+        color: $black;
+        @media screen and (min-width: $grid-breakpoints-md) {
+          font-size: $fontsize-m;
+          margin-bottom: 7px;
+        }
+      }
+    }
+  }
+  &-img {
+    display: none;
+    @media screen and (min-width: $grid-breakpoints-md) {
+      display: flex;
+      width: 207px;
+      overflow: hidden;
+      margin: -1px;
+    }
+    &-ctn {
+      width: 100%;
+      height: auto;
+      transition-duration: 0.2s;
+    }
+  }
+}
+.news-and-events-title {
+  margin-bottom: 20px;
+}
+.more-btn {
+  text-align: right;
+}
