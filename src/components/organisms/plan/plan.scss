@@ -1,0 +1,9 @@
+@use "../../variables" as *;
+.plan-message {
+  &-ttl {
+    color: $orange-bistre;
+  }
+  &-ctn {
+    margin-bottom: 32px;
+  }
+}
