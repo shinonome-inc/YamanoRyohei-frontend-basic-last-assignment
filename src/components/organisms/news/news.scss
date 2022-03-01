@@ -5,7 +5,6 @@ a {
   }
 }
 .news {
-  width: 48%;
   &-and-events-title {
     margin-bottom: 35px;
   }
@@ -20,6 +19,10 @@ a {
       background-color: $white;
       margin-top: -1px;
       list-style-type: none;
+      transition: 0.2s ease;
+      &:hover {
+        background-color: $gray-gainsboro;
+      }
     }
 
     &-date {
@@ -39,7 +42,7 @@ a {
       margin: 0;
     }
   }
-}
-.more-btn {
-  float: right;
+  &-more-btn {
+    text-align: right;
+  }
 }
