@@ -14,6 +14,7 @@
       overflow: hidden;
       display: flex;
       transition-duration: 0.2s;
+      overflow: visible;
       &:hover {
         text-decoration: none;
       }
@@ -31,11 +32,12 @@
     &-article {
       padding: 10px 20px 16px;
       @media screen and (min-width: $grid-breakpoints-md) {
-        padding: 0;
-        margin: 0 auto;
+        padding: 0 6.11354%;
         display: flex;
+        flex: 1;
         flex-direction: column;
         justify-content: center;
+        overflow: hidden;
       }
       &-title {
         font-weight: 400;
@@ -43,6 +45,9 @@
         margin-bottom: 6px;
         font-size: $fontsize-s;
         color: $black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         @media screen and (min-width: $grid-breakpoints-md) {
           font-size: $fontsize-m;
           margin-bottom: 7px;
