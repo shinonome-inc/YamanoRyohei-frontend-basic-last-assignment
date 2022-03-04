@@ -1,12 +1,12 @@
 @use "../../variables" as *;
 
-.card-table {
-  @media screen and (min-width: $grid-breakpoints-md) {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
-  }
-}
 .card {
   margin-bottom: 30px;
+  &-table {
+    @media screen and (min-width: $grid-breakpoints-md) {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+    }
+  }
 }
