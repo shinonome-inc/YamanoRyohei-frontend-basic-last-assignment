@@ -1,9 +1,5 @@
 @use "../../variables" as *;
-a {
-  &:hover {
-    text-decoration: none;
-  }
-}
+
 .news {
   &-and-events-title {
     margin-bottom: 35px;
@@ -16,33 +12,41 @@ a {
     &-bg {
       padding: 20px;
       border: 1px solid $gray-gainsboro;
+      border-bottom: 0;
       background-color: $white;
-      margin-top: -1px;
       list-style-type: none;
-      transition: 0.2s ease;
-      &:hover {
-        background-color: $gray-gainsboro;
+      &:last-child {
+        border-bottom: 1px solid $gray-gainsboro;
       }
     }
-
+    &-link {
+      &:hover {
+        text-decoration: none;
+      }
+    }
     &-date {
-      font-size: 12px;
+      font-size: $fontsize-xs;
       color: $gray-nobel;
       display: block;
       margin-bottom: 10px;
     }
     &-article-title {
       color: $black;
-      font-size: 16px;
+      font-size: $fontsize-m;
       line-height: 23px;
       font-weight: normal;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       margin: 0;
+      transition: 0.2s ease;
+      &:hover {
+        color: $orange-bistre;
+      }
     }
   }
   &-more-btn {
     text-align: right;
+    margin-bottom: 35px;
   }
 }
