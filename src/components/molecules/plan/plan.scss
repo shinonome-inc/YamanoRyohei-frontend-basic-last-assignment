@@ -1,28 +1,13 @@
 @use "../../variables" as *;
 
 .plan {
-  @media screen and (min-width: $grid-breakpoints-md) {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: flex-start;
-    margin-bottom: 40px;
-  }
   &-table {
-    width: 100%;
-    margin-bottom: 40px;
-    height: auto;
-    list-style-type: none;
-    @media screen and (min-width: $grid-breakpoints-md) {
-      margin-bottom: 0;
-      padding: 0;
-    }
+    text-align: center;
     &-title {
       color: $white;
       margin: 0;
-      font-size: 20px;
+      font-size: $fontsize-l;
       font-weight: 700;
-      text-align: center;
       &-1 {
         background-color: $orange-zorba;
         padding: 20px 40px;
@@ -32,55 +17,50 @@
         padding: 15px 40px 20px 40px;
       }
     }
-    &-m {
-      padding: 24.5px 0;
-      background-color: $gray-desertStorm;
-      border: 1px solid $gray-gainsboro;
-      border-top: 0;
-    }
     &-money {
       display: flex;
       justify-content: center;
       align-items: center;
       &-mark {
         color: $orange-bistre;
-        font-size: 20px;
-        font-weight: bold;
+        font-size: $fontsize-l;
+        font-weight: 700;
       }
       &-price {
         margin-bottom: 16px;
-        font-size: 40px;
+        font-size: $fontsize-xxl;
         font-weight: 700;
         color: $orange-bistre;
       }
     }
-    &-month {
-      text-align: center;
-      font-size: 14px;
-      margin-bottom: 0;
-    }
     &-data {
       margin-bottom: 0;
-      text-align: center;
-      align-items: center;
-      font-size: 14px;
+      font-size: $fontsize-s;
       padding: 20px;
-      &-1 {
-        border: 1px solid $gray-gainsboro;
-        border-top: 0;
-      }
-      &-2 {
-        border-bottom: 1px solid $gray-gainsboro;
+      border: 1px solid $gray-gainsboro;
+      border-top: 0;
+      &-brown {
+        border-left: 0;
+        border-right: 0;
         &:last-child {
           margin-bottom: -5px;
           border-bottom: 0;
         }
       }
     }
+    &-ctn {
+      font-size: $fontsize-s;
+      margin-bottom: 0;
+    }
   }
 }
-ul:nth-child(2) {
+.plan-table:nth-child(2) {
   border: 5px solid $orange-bistre;
+}
+.plan-table :nth-of-type(2) {
+  padding: 24px 0;
+  background-color: $gray-desertStorm;
+  border: 1px solid $gray-gainsboro;
 }
 .button {
   margin: 0 auto;

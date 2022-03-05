@@ -1,9 +1,27 @@
 @use "../../variables" as *;
-.plan-message {
-  &-ttl {
-    color: $orange-bistre;
+.plan {
+  &-message {
+    &-ttl {
+      color: $orange-bistre;
+    }
+    &-ctn {
+      margin-bottom: 32px;
+    }
   }
-  &-ctn {
-    margin-bottom: 32px;
+  @media screen and (min-width: $grid-breakpoints-md) {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  &-table {
+    flex: 1 auto;
+    margin-bottom: 40px;
+    list-style-type: none;
+    padding-left: 0;
+    @media screen and (min-width: $grid-breakpoints-md) {
+      margin-bottom: 0;
+      padding: 0;
+    }
   }
 }
