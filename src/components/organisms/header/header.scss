@@ -1,0 +1,89 @@
+@use "../../variables" as *;
+.navbar {
+    background-color: $black;
+    padding: 0;
+    &-logo {
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-img {
+        width: 120px;
+    }
+}
+
+.hamburger-menu {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background-color: $black;
+    margin-bottom: 0;
+    color: $white;
+    &:focus {
+        outline: none;
+    }
+}
+
+.fas {
+    margin-left: 0;
+}
+
+.nav {
+    &-tag {
+        color: $white;
+        display: block;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        margin: 0 auto;
+        &:hover {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+    &-content {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        list-style-type: none;
+        &:hover {
+            background-color: $orange-bistre;
+            transition: ease 0.2s;
+        }
+    }
+}
+
+.plus-icon {
+    display: inline-block;
+    position: relative;
+    right: 17px;
+    height: 26px;
+    width: 26px;
+    border: 1px solid $white;
+    color: $white;
+    border-radius: 100%;
+    text-align: center;
+    &:hover {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+#accordion_menu {
+    padding: 0;
+}
+
+.plus-nav {
+    padding-left: 12px;
+}
+
+#accordion_menu .nav-content-plus a[data-toggle="collapse"].collapsed::before {
+    content: "+";
+}
+
+#accordion_menu .nav-content-plus a[data-toggle="collapse"]::before {
+    content: "-";
+}
