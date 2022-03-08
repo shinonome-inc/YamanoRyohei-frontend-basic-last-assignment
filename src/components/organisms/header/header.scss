@@ -1,89 +1,162 @@
 @use "../../variables" as *;
+.header-inner {
+  @media screen and (min-width: $grid-breakpoints-xl) {
+    background-color: $black-50;
+  }
+}
 .navbar {
-    background-color: $black;
-    padding: 0;
-    &-logo {
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  background-color: $black;
+  padding: 0;
+  @media screen and (min-width: $grid-breakpoints-xl) {
+    background-color: transparent;
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-brand {
+    margin: 0;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (min-width: $grid-breakpoints-xl) {
+      padding: 0;
     }
-    &-img {
-        width: 120px;
+  }
+  &-img {
+    width: 120px;
+    @media screen and (min-width: $grid-breakpoints-xl) {
+      width: 140px;
     }
+  }
+  &-collapse {
+    flex-grow: 0;
+  }
+  &-plus {
+    padding-left: 12px;
+  }
 }
-
-.hamburger-menu {
-    width: 60px;
-    height: 60px;
-    border: 0;
-    background-color: $black;
-    margin-bottom: 0;
-    color: $white;
-    &:focus {
-        outline: none;
-    }
+.hamburger-btn {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background-color: $black;
+  margin-bottom: 0;
+  color: $white;
+  &:focus {
+    outline: none;
+  }
+  @media screen and (min-width: $grid-breakpoints-xl) {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
-
 .fas {
-    margin-left: 0;
+  margin-left: 0;
 }
-
+.plus-menu {
+  display: block;
+}
 .nav {
-    &-tag {
-        color: $white;
-        display: block;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        padding: 0 16px;
-        margin: 0 auto;
-        &:hover {
-            text-decoration: none;
-            color: $white;
-        }
-    }
-    &-content {
-        display: flex;
-        align-items: center;
-        height: 56px;
-        list-style-type: none;
-        &:hover {
-            background-color: $orange-bistre;
-            transition: ease 0.2s;
-        }
-    }
-}
-
-.plus-icon {
-    display: inline-block;
-    position: relative;
-    right: 17px;
-    height: 26px;
-    width: 26px;
-    border: 1px solid $white;
+  &-tag {
     color: $white;
-    border-radius: 100%;
-    text-align: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    margin: 0 auto;
     &:hover {
+      text-decoration: none;
+      color: $white;
+    }
+    @media screen and (min-width: $grid-breakpoints-xl) {
+      height: 90px;
+      padding: 0 20px;
+      &:hover {
+        color: $gray-nobel;
+      }
+    }
+    &-lg {
+      color: $white;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      margin: 0 auto;
+      &:hover {
         text-decoration: none;
         color: $white;
+      }
     }
+  }
+  &-content {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    list-style-type: none;
+    &:hover {
+      background-color: $orange-bistre;
+      transition: ease 0.2s;
+      @media screen and (min-width: $grid-breakpoints-xl) {
+        background-color: transparent;
+      }
+    }
+    &-lg {
+      height: 56px;
+      width: 220px;
+      list-style-type: none;
+      background-color: $black;
+      &:hover {
+        background-color: $orange-bistre;
+        transition: ease 0.2s;
+      }
+    }
+  }
 }
-
+.hover-nav {
+  display: none;
+  @media screen and (min-width: $grid-breakpoints-xl) {
+    position: absolute;
+    top: 90px;
+    left: 430px;
+  }
+}
+.accordion:hover .hover-nav {
+  @media screen and (min-width: $grid-breakpoints-xl) {
+    display: block;
+  }
+}
+.plus-icon {
+  display: inline-block;
+  position: relative;
+  right: 17px;
+  height: 26px;
+  width: 26px;
+  border: 1px solid $white;
+  color: $white;
+  border-radius: 100%;
+  text-align: center;
+  &:hover {
+    text-decoration: none;
+    color: $white;
+  }
+  @media screen and (min-width: $grid-breakpoints-xl) {
+    display: none;
+  }
+}
 #accordion_menu {
-    padding: 0;
+  padding: 0;
 }
-
-.plus-nav {
-    padding-left: 12px;
-}
-
 #accordion_menu .nav-content-plus a[data-toggle="collapse"].collapsed::before {
-    content: "+";
+  content: "+";
 }
-
 #accordion_menu .nav-content-plus a[data-toggle="collapse"]::before {
-    content: "-";
+  content: "-";
 }
