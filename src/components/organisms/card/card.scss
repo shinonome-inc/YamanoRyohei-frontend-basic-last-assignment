@@ -4,9 +4,12 @@
   @media screen and (min-width: $grid-breakpoints-md) {
     display: flex;
     gap: 24px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 }
 .card {
   margin-bottom: 40px;
+  @media screen and (min-width: $grid-breakpoints-md) {
+    width: 33%;
+  }
 }
