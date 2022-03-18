@@ -1,18 +1,19 @@
 @use "../../variables" as *;
-
+@mixin title {
+  color: $white;
+  margin: 0;
+  font-size: $fontsize-l;
+  font-weight: 700;
+}
 .plan {
   &-table {
     text-align: center;
     &-title {
-      color: $white;
-      margin: 0;
-      font-size: $fontsize-l;
-      font-weight: 700;
-      &-1 {
-        background-color: $orange-zorba;
-        padding: 20px 40px;
-      }
-      &-2 {
+      @include title;
+      background-color: $orange-zorba;
+      padding: 20px 40px;
+      &-brown {
+        @include title;
         background-color: $orange-bistre;
         padding: 15px 40px 20px 40px;
       }
@@ -20,32 +21,35 @@
     &-money {
       display: flex;
       justify-content: center;
-      align-items: center;
       &-mark {
+        margin-top: 33px;
         color: $orange-bistre;
         font-size: $fontsize-l;
         font-weight: 700;
       }
       &-price {
-        margin-bottom: 16px;
+        margin-top: 4px;
         font-size: $fontsize-xxl;
         font-weight: 700;
         color: $orange-bistre;
       }
     }
     &-data {
-      margin-bottom: 0;
-      font-size: $fontsize-s;
       padding: 20px;
       border: 1px solid $gray-gainsboro;
-      border-top: 0;
+      border-bottom: 0;
+      box-sizing: border-box;
       &-brown {
-        border-left: 0;
-        border-right: 0;
         &:last-child {
-          margin-bottom: -5px;
-          border-bottom: 0;
+          padding-bottom: 15px;
+          border-bottom: 1px solid $gray-gainsboro;
         }
+      }
+      &:nth-child(2) {
+        background-color: $gray-desertStorm;
+      }
+      &:last-child {
+        border-bottom: 1px solid $gray-gainsboro;
       }
     }
     &-ctn {
@@ -57,11 +61,6 @@
 .plan-table:nth-child(2) {
   border: 5px solid $orange-bistre;
 }
-.plan-table :nth-of-type(2) {
+.table-money {
   padding: 24px 0;
-  background-color: $gray-desertStorm;
-  border: 1px solid $gray-gainsboro;
-}
-.button {
-  margin: 0 auto;
 }
