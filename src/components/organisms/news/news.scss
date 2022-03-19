@@ -14,29 +14,29 @@
         border-bottom: 1px solid $gray-gainsboro;
       }
     }
-    &-link {
+    .news-list--link {
       &:hover {
         text-decoration: none;
       }
-    }
-    &-date {
-      font-size: $fontsize-xs;
-      color: $gray-nobel;
-      display: block;
-      margin-bottom: 10px;
-    }
-    &-article-title {
-      color: $black;
-      font-size: $fontsize-m;
-      line-height: 23px;
-      font-weight: normal;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      margin: 0;
-      transition: 0.2s ease;
-      &:hover {
-        color: $orange-bistre;
+      .news-list--date {
+        font-size: $fontsize-xs;
+        color: $gray-nobel;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .news-list--article-title {
+        color: $black;
+        font-size: $fontsize-m;
+        line-height: 23px;
+        font-weight: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 0;
+        transition: 0.2s ease;
+        &:hover {
+          color: $orange-bistre;
+        }
       }
     }
   }
@@ -44,7 +44,7 @@
     text-align: right;
     margin-bottom: 35px;
   }
-}
-.title-bottom {
-  margin-bottom: 35px;
+  .news-and-events-title {
+    margin-bottom: 35px;
+  }
 }
