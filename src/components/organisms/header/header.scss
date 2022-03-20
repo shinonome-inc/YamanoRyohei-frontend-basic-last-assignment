@@ -58,9 +58,6 @@
 .fas {
   margin-left: 0;
 }
-.plus-menu {
-  display: block;
-}
 .nav {
   &-tag {
     color: $white;
@@ -120,19 +117,6 @@
     }
   }
 }
-.hover-nav {
-  display: none;
-  @media screen and (min-width: $grid-breakpoints-xl) {
-    position: absolute;
-    top: 90px;
-    left: 430px;
-  }
-}
-.accordion:hover .hover-nav {
-  @media screen and (min-width: $grid-breakpoints-xl) {
-    display: block;
-  }
-}
 .plus-icon {
   display: inline-block;
   position: relative;
@@ -149,6 +133,28 @@
   }
   @media screen and (min-width: $grid-breakpoints-xl) {
     display: none;
+  }
+}
+.collapse {
+  @media screen and (min-width: $grid-breakpoints-xl) {
+    display: none;
+  }
+}
+.hidden_box input {
+  display: none;
+}
+.hidden_box .hidden_show {
+  overflow: hidden;
+  transition: 0.8s;
+  display: none;
+}
+.hidden_box input:checked + .hidden_show {
+  @media screen and (min-width: $grid-breakpoints-xl) {
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 430px;
   }
 }
 #accordion_menu {
