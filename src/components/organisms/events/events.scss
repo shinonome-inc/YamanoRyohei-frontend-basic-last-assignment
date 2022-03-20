@@ -2,71 +2,59 @@
 
 .events {
   &-list {
-    width: 100%;
     padding-left: 0;
+    margin-bottom: 30px;
     &-bg {
       background-color: $white;
       border: 1px solid $gray-gainsboro;
       list-style-type: none;
-      margin-top: -1px;
+      border-bottom: none;
+      &:last-child {
+        border-bottom: 1px solid $gray-gainsboro;
+      }
     }
-    &-ctn {
-      overflow: hidden;
+    .events-list-ctn {
       display: flex;
-      transition-duration: 0.2s;
-      overflow: visible;
+      align-items: center;
       &:hover {
         text-decoration: none;
       }
-      &:hover .events-img-ctn {
+      &:hover .events-img {
         transform: scale(1.2);
-        transition-duration: 0.2s;
+        transition-duration: 0.5s;
         overflow: hidden;
       }
-    }
-    &-date {
-      color: $gray-nobel;
-      display: block;
-      font-size: $fontsize-xs;
-    }
-    &-article {
-      padding: 10px 20px 16px;
-      @media screen and (min-width: $grid-breakpoints-md) {
-        padding: 0 6.11354%;
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        justify-content: center;
-        overflow: hidden;
-      }
-      &-title {
-        font-weight: 400;
-        line-height: 1.6;
-        margin-bottom: 6px;
-        font-size: $fontsize-s;
-        color: $black;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+      .events-img-wrapper {
+        display: none;
         @media screen and (min-width: $grid-breakpoints-md) {
-          font-size: $fontsize-m;
-          margin-bottom: 7px;
+          display: block;
+          min-width: 207px;
+          overflow: hidden;
+        }
+        .events-img {
+          width: 100%;
+          transition-duration: 0.2s;
         }
       }
-    }
-  }
-  &-img {
-    display: none;
-    @media screen and (min-width: $grid-breakpoints-md) {
-      display: flex;
-      width: 207px;
-      overflow: hidden;
-      margin: -1px;
-    }
-    &-ctn {
-      width: 100%;
-      height: auto;
-      transition-duration: 0.2s;
+      .events-list-article {
+        padding: 10px 20px 16px;
+        flex: 1;
+        @media screen and (min-width: $grid-breakpoints-md) {
+          padding: 0 24px;
+        }
+        &-title {
+          font-weight: 400;
+          line-height: 1.5;
+          margin-bottom: 8px;
+          font-size: $fontsize-m;
+          color: $black;
+        }
+      }
+      .events-list-date {
+        color: $gray-nobel;
+        display: block;
+        font-size: $fontsize-xs;
+      }
     }
   }
 }
