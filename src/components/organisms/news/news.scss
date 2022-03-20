@@ -1,6 +1,9 @@
 @use "../../variables" as *;
 
 .news {
+  .news-and-events-title {
+    margin-bottom: 35px;
+  }
   &-list {
     padding: 0;
     margin-bottom: 30px;
@@ -14,17 +17,17 @@
         border-bottom: 1px solid $gray-gainsboro;
       }
     }
-    .news-list--link {
+    .news-list-link {
       &:hover {
         text-decoration: none;
       }
-      .news-list--date {
+      .news-list-date {
         font-size: $fontsize-xs;
         color: $gray-nobel;
         display: block;
         margin-bottom: 10px;
       }
-      .news-list--article-title {
+      .news-list-article-title {
         color: $black;
         font-size: $fontsize-m;
         line-height: 23px;
@@ -42,9 +45,6 @@
   }
   &-more-btn {
     text-align: right;
-    margin-bottom: 35px;
-  }
-  .news-and-events-title {
     margin-bottom: 35px;
   }
 }
