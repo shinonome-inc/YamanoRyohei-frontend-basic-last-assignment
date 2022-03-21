@@ -1,26 +1,20 @@
 @use "../../variables" as *;
 .header-inner {
+  background-color: $black;
   @media screen and (min-width: $grid-breakpoints-xl) {
     background-color: $black-50;
   }
 }
 .navbar {
-  background-color: $black;
   padding: 0;
   @media screen and (min-width: $grid-breakpoints-xl) {
-    background-color: transparent;
-    width: 1200px;
     height: 90px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
   &-brand {
     margin: 0;
     padding: 0 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     @media screen and (min-width: $grid-breakpoints-xl) {
       padding: 0;
     }
@@ -50,9 +44,6 @@
   }
   @media screen and (min-width: $grid-breakpoints-xl) {
     display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 }
 .fas {
@@ -61,7 +52,6 @@
 .nav {
   &-tag {
     color: $white;
-    display: block;
     height: 100%;
     width: 100%;
     display: flex;
@@ -73,20 +63,20 @@
       color: $white;
     }
     @media screen and (min-width: $grid-breakpoints-xl) {
-      height: 90px;
       padding: 0 20px;
+      transition: ease 0.2s;
       &:hover {
         color: $gray-nobel;
       }
     }
-    &-lg {
+    &-xl {
       color: $white;
       height: 100%;
       width: 100%;
       display: flex;
       align-items: center;
       padding: 0 16px;
-      margin: 0 auto;
+      margin: 0;
       &:hover {
         text-decoration: none;
         color: $white;
@@ -96,23 +86,22 @@
   &-content {
     display: flex;
     align-items: center;
-    height: 56px;
+    height: 50px;
     list-style-type: none;
+    transition: ease 0.2s;
     &:hover {
-      background-color: $orange-bistre;
-      transition: ease 0.2s;
       @media screen and (min-width: $grid-breakpoints-xl) {
         background-color: transparent;
       }
     }
-    &-lg {
+    &-xl {
       height: 56px;
       width: 220px;
       list-style-type: none;
       background-color: $black;
+      transition: ease 0.2s;
       &:hover {
         background-color: $orange-bistre;
-        transition: ease 0.2s;
       }
     }
   }
@@ -140,21 +129,22 @@
     display: none;
   }
 }
-.hidden_box input {
+.hidden-menu input {
   display: none;
 }
-.hidden_box .hidden_show {
+.hidden-menu .hidden-menu-show {
   overflow: hidden;
-  transition: 0.8s;
   display: none;
 }
-.hidden_box input:checked + .hidden_show {
+.menu-position {
+  position: relative;
+}
+.hidden-menu input:checked + .hidden-menu-show {
   @media screen and (min-width: $grid-breakpoints-xl) {
-    height: auto;
     display: block;
     position: absolute;
-    top: 90px;
-    left: 430px;
+    top: 70px;
+    left: -40px;
   }
 }
 #accordion_menu {
