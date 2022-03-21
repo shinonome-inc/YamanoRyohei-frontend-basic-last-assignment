@@ -1,0 +1,22 @@
+@use "../../variables" as *;
+.about {
+  &-mv {
+    width: 50%;
+    @media screen and (min-width: $grid-breakpoints-lg) {
+      width: 25%;
+    }
+  }
+  .message {
+    background-color: $white-smoke;
+    padding: 36px 25px 33px 25px;
+    @media screen and (min-width: $grid-breakpoints-lg) {
+      padding: 51px 20px 49px 20px;
+    }
+    .message-title {
+      color: $orange-bistre;
+    }
+  }
+}
+.row {
+  margin-right: 0;
+}
