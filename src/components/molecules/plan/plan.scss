@@ -1,14 +1,12 @@
 @use "../../variables" as *;
-@mixin title {
-  color: $white;
-  margin: 0;
-  font-size: $fontsize-l;
-  font-weight: 700;
-}
+
 .plan-table {
   text-align: center;
   &-title {
-    @include title;
+    color: $white;
+    margin: 0;
+    font-size: $fontsize-l;
+    font-weight: 700;
     background-color: $orange-zorba;
     padding: 20px 40px;
   }
@@ -19,6 +17,7 @@
       color: $orange-bistre;
       display: flex;
       justify-content: center;
+      align-items: baseline;
       .plan-table-money-mark {
         margin-top: 29px;
         color: $orange-bistre;
@@ -38,16 +37,15 @@
     &:last-child {
       border-bottom: 1px solid $gray-gainsboro;
     }
-  }
-  &-ctn {
-    font-size: $fontsize-s;
-    margin-bottom: 0;
+    .plan-table-content {
+      font-size: $fontsize-s;
+      margin-bottom: 0;
+    }
   }
 }
 .plan-table:nth-child(even) {
   border: 5px solid $orange-bistre;
   .plan-table-title {
-    @include title;
     background-color: $orange-bistre;
     padding: 15px 40px 20px 40px;
   }
