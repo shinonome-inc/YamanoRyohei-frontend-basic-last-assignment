@@ -1,6 +1,9 @@
 @use "../../variables" as *;
 
 .events {
+  .news-and-events-title {
+    margin-bottom: 20px;
+  }
   &-list {
     padding-left: 0;
     margin-bottom: 30px;
@@ -13,7 +16,7 @@
         border-bottom: 1px solid $gray-gainsboro;
       }
     }
-    .events-list-ctn {
+    .events-list-link {
       display: flex;
       align-items: center;
       &:hover {
@@ -21,8 +24,6 @@
       }
       &:hover .events-img {
         transform: scale(1.2);
-        transition-duration: 0.5s;
-        overflow: hidden;
       }
       .events-img-wrapper {
         display: none;
@@ -33,12 +34,12 @@
         }
         .events-img {
           width: 100%;
-          transition-duration: 0.2s;
+          transition-duration: 0.5s;
         }
       }
       .events-list-article {
         padding: 10px 20px 16px;
-        flex: 1;
+        overflow: hidden;
         @media screen and (min-width: $grid-breakpoints-md) {
           padding: 0 24px;
         }
@@ -48,6 +49,9 @@
           margin-bottom: 8px;
           font-size: $fontsize-m;
           color: $black;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
       }
       .events-list-date {
@@ -57,10 +61,7 @@
       }
     }
   }
-}
-.news-and-events-title {
-  margin-bottom: 20px;
-}
-.more-btn {
-  text-align: right;
+  .more-btn {
+    text-align: right;
+  }
 }
