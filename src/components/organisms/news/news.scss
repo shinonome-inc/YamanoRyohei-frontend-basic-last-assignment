@@ -2,12 +2,13 @@
 
 .news {
   .news-and-events-title {
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
   &-list {
     padding: 0;
     margin-bottom: 30px;
     &-bg {
+      height: 85px;
       padding: 20px;
       border: 1px solid $gray-gainsboro;
       border-bottom: 0;
@@ -26,6 +27,7 @@
         color: $gray-nobel;
         display: block;
         margin-bottom: 10px;
+        line-height: 1;
       }
       .news-list-article-title {
         color: $black;
