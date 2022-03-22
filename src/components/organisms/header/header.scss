@@ -4,6 +4,9 @@
   @media screen and (min-width: $grid-breakpoints-xl) {
     background-color: $black-50;
   }
+  .container-xl {
+    padding: 0;
+  }
 }
 .navbar {
   padding: 0;
