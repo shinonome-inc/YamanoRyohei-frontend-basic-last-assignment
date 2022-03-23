@@ -61,6 +61,7 @@
     align-items: center;
     padding: 0 16px;
     margin: 0 auto;
+    font-size: $fontsize-s;
     &:hover {
       text-decoration: none;
       color: $white;
@@ -80,6 +81,7 @@
       align-items: center;
       padding: 0 16px;
       margin: 0;
+      font-size: $fontsize-s;
       &:hover {
         text-decoration: none;
         color: $white;
