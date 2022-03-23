@@ -1,38 +1,35 @@
 @use "../../variables" as *;
-.mv {
-  height: 360px;
-  background: url(./top-image.png) center 90% / cover;
-  @media screen and (min-width: $grid-breakpoints-lg) {
-    height: 700px;
-    background: url(./top-image.png) center 60% / cover;
-  }
-}
-
-.mv-copy {
-  position: absolute;
-  top: 35%;
-  left: 46%;
-  transform: translate(-50%, -80%);
-  color: $white;
-  font-size: $fontsize-l;
-  font-weight: 400;
-  font-family: $fontfamily-mincho;
-  writing-mode: vertical-rl;
-  @media screen and (min-width: $grid-breakpoints-lg) {
-    position: absolute;
-    top: 50%;
-    left: 47%;
-    transform: translate(-50%, -50%);
-    font-size: $fontsize-xl;
-  }
-}
 .top {
+  .top-img {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./top-image.png) center/cover;
+
+    @media screen and (min-width: $grid-breakpoints-lg) {
+      height: 700px;
+      background: url(./top-image.png) center/cover;
+    }
+    .top-img-copy {
+      color: $white;
+      font-size: $fontsize-l;
+      font-family: $fontfamily-mincho;
+      writing-mode: vertical-rl;
+      margin: 0;
+
+      @media screen and (min-width: $grid-breakpoints-lg) {
+        font-size: $fontsize-xl;
+      }
+    }
+  }
   .message {
     background-color: $black;
     color: $white;
-    padding: 34.5px 20px 27px 20px;
+    padding: 34.5px 160px 27px;
+
     @media screen and (min-width: $grid-breakpoints-lg) {
-      padding: 32px 16px 33px 16px;
+      padding: 52px 36.5px 74px;
     }
   }
 }
