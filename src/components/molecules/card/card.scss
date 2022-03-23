@@ -25,7 +25,7 @@
   &-img {
     overflow: hidden;
     border-radius: 0;
-    &-top {
+    .card-img-top {
       margin: 0;
       border-radius: 0;
       @media screen and (min-width: $grid-breakpoints-md) {
@@ -38,18 +38,18 @@
   }
   &-body {
     padding: 0;
-  }
-  &-text {
-    line-height: 2.4;
-    font-size: $fontsize-s;
-    padding: 32px 46px;
-    margin: 0;
-    @media screen and (min-width: $grid-breakpoints-md) {
-      padding: 32px 35px 30px;
+    .card-text {
+      line-height: 2.4;
+      font-size: $fontsize-s;
+      padding: 32px 46px;
+      margin: 0;
+      @media screen and (min-width: $grid-breakpoints-md) {
+        padding: 32px 35px 30px;
+      }
     }
-  }
-  &-btn {
-    margin: auto;
-    margin-bottom: 30px;
+    .card-btn {
+      margin: auto;
+      margin-bottom: 30px;
+    }
   }
 }
