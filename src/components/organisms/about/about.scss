@@ -6,18 +6,18 @@
       width: 25%;
     }
   }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .message {
     background-color: $white-smoke;
-    padding: 36px 25px 33px 25px;
+    padding: 31.5px 24px 29.5px;
     @media screen and (min-width: $grid-breakpoints-lg) {
-      padding: 51px 20px 49px 20px;
+      padding: 52px 26.5px;
     }
     .message-title {
       color: $orange-bistre;
     }
   }
-}
-.row {
-  margin-right: 0;
-  margin-left: 0;
 }
