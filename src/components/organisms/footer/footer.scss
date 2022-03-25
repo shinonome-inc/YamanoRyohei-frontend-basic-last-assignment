@@ -7,16 +7,17 @@
     }
     .message-content {
       font-family: $fontfamily-gothic;
-      font-weight: 400;
       margin-bottom: 21.6px;
     }
     .logo {
       display: flex;
       justify-content: center;
       &-position {
-        margin-right: 12px;
-        margin-left: 0;
+        margin: 0 6px;
       }
+    }
+    .message-title {
+      margin-bottom: 20px;
     }
   }
   .nav-list {
@@ -35,10 +36,10 @@
     }
     .nav-wrapper {
       width: 50%;
+      line-height: 20px;
       @media screen and (min-width: $grid-breakpoints-md) {
         width: auto;
-        line-height: 1;
-        height: 60px;
+        height: 52px;
         display: flex;
         align-items: center;
         &::after {
@@ -53,7 +54,7 @@
     .nav-content {
       color: $black;
       text-decoration: none;
-      font-size: 14px;
+      font-size: $fontsize-s;
     }
   }
 }
@@ -64,6 +65,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $fontfamily-gothic;
-  font-size: 12px;
+  font-size: $fontsize-xs;
+  white-space: nowrap;
 }
