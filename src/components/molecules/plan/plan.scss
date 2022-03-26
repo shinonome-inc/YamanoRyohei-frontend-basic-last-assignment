@@ -1,5 +1,6 @@
 @use "../../variables" as *;
 
+<<<<<<< HEAD
 .plan-table {
   text-align: center;
   &-title {
@@ -15,6 +16,48 @@
       font-size: $fontsize-xxl;
       font-weight: 700;
       color: $orange-bistre;
+=======
+.plan {
+  @media screen and (min-width: $grid-breakpoints-md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  &-table {
+    width: 100%;
+    margin-bottom: 40px;
+    height: auto;
+    @media screen and (min-width: $grid-breakpoints-md) {
+      width: 30%;
+      margin-bottom: 0;
+    }
+    &-2 {
+      border: 5px solid $orange-bistre;
+    }
+    &-title {
+      color: $white;
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      &-1 {
+        background-color: $orange-zorba;
+        line-height: 60px;
+      }
+      &-2 {
+        background-color: $orange-bistre;
+        line-height: 55px;
+      }
+    }
+    &-m {
+      padding: 24.5px 0;
+      background-color: $gray-desertStorm;
+      border: 1px solid $gray-gainsboro;
+      border-top: 0;
+    }
+    &-money {
+>>>>>>> parent of 1048699 (planのOrganismとの分離、タグの変更。organismの完成)
       display: flex;
       justify-content: center;
       align-items: baseline;
@@ -40,6 +83,7 @@
     .plan-table-content {
       font-size: $fontsize-s;
       margin-bottom: 0;
+<<<<<<< HEAD
     }
   }
 }
@@ -55,4 +99,24 @@
       border-bottom: 1px solid $gray-gainsboro;
     }
   }
+=======
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      &-1 {
+        border: 1px solid $gray-gainsboro;
+        border-top: 0;
+      }
+      &-2 {
+        border-bottom: 1px solid $gray-gainsboro;
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.button {
+  margin: 0 auto;
+>>>>>>> parent of 1048699 (planのOrganismとの分離、タグの変更。organismの完成)
 }
