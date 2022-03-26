@@ -1,0 +1,35 @@
+@use "../../variables" as *;
+.top {
+  .top-img {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./top-image.png) center/cover;
+
+    @media screen and (min-width: $grid-breakpoints-lg) {
+      height: 700px;
+      background: url(./top-image.png) center/cover;
+    }
+    .top-img-copy {
+      color: $white;
+      font-size: $fontsize-l;
+      font-family: $fontfamily-mincho;
+      writing-mode: vertical-rl;
+      margin: 0;
+
+      @media screen and (min-width: $grid-breakpoints-lg) {
+        font-size: $fontsize-xl;
+      }
+    }
+  }
+  .message {
+    background-color: $black;
+    color: $white;
+    padding: 34.5px 20px 27px;
+
+    @media screen and (min-width: $grid-breakpoints-lg) {
+      padding: 52px 36.5px 74px;
+    }
+  }
+}
