@@ -5,10 +5,10 @@
   font-family: $fontfamily-mincho;
   color: $black;
   &-title {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     font-size: $fontsize-l;
     line-height: 30px;
-    @media screen and (min-width: $grid-breakpoints-lg) {
+    @media screen and (min-width: $grid-breakpoints-md) {
       margin-bottom: 8px;
       font-size: $fontsize-xl;
       line-height: 54px;
