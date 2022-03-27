@@ -10,20 +10,20 @@
     background-color: $orange-zorba;
     padding: 20px 40px;
   }
-  &-money {
-    .plan-table-money-price {
-      font-size: $fontsize-xxl;
-      font-weight: 700;
+  .plan-table-money-price {
+    font-size: $fontsize-xxl;
+    font-weight: 700;
+    color: $orange-bistre;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    &::before {
+      content: "¥";
+      margin-top: 29px;
       color: $orange-bistre;
-      display: flex;
-      justify-content: center;
-      align-items: baseline;
-      .plan-table-money-mark {
-        margin-top: 29px;
-        color: $orange-bistre;
-        font-size: $fontsize-l;
-        font-weight: 700;
-      }
+      font-size: $fontsize-l;
+      font-weight: 700;
+      margin-right: 4px;
     }
   }
   &-data {
@@ -41,18 +41,16 @@
       font-size: $fontsize-s;
       margin-bottom: 0;
     }
-  }
-}
-.plan-table:nth-child(even) {
-  border: 5px solid $orange-bistre;
-  .plan-table-title {
-    background-color: $orange-bistre;
-    padding: 15px 40px 20px;
-  }
-  .plan-table-data {
     &:last-child {
       padding-bottom: 15px;
       border-bottom: 1px solid $gray-gainsboro;
+    }
+  }
+  &:nth-child(even) {
+    border: 5px solid $orange-bistre;
+    .plan-table-title {
+      background-color: $orange-bistre;
+      padding: 15px 40px 20px;
     }
   }
 }
