@@ -6,14 +6,20 @@
       padding: 60px 0;
     }
     .message-content {
-      font-family: $fontfamily-gothic;
       margin-bottom: 21.6px;
     }
     .logo {
       display: flex;
       justify-content: center;
-      &-position {
-        margin: 0 6px;
+      .logo-link {
+        color: $black;
+        &:hover {
+          color: $gray-nobel;
+          transition: 0.2s ease;
+        }
+        .logo-position {
+          margin: 0 6px;
+        }
       }
     }
     .message-title {
@@ -55,6 +61,10 @@
       color: $black;
       text-decoration: none;
       font-size: $fontsize-s;
+      &:hover {
+        color: $orange-bistre;
+        transition: 0.2s ease;
+      }
     }
   }
 }
@@ -66,5 +76,6 @@
   justify-content: center;
   align-items: center;
   font-size: $fontsize-xs;
-  white-space: nowrap;
+  white-space: wrap;
+  text-align: center;
 }
