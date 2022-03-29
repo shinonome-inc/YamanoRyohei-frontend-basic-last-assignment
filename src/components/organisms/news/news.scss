@@ -7,40 +7,41 @@
   &-list {
     padding: 0;
     margin-bottom: 30px;
-    &-bg {
-      height: 85px;
-      padding: 20px;
-      border: 1px solid $gray-gainsboro;
-      border-bottom: 0;
-      background-color: $white;
-      list-style-type: none;
-      &:last-child {
-        border-bottom: 1px solid $gray-gainsboro;
-      }
-    }
     .news-list-link {
       &:hover {
         text-decoration: none;
       }
-      .news-list-date {
-        font-size: $fontsize-xs;
-        color: $gray-nobel;
-        display: block;
-        margin-bottom: 10px;
-        line-height: 1;
-      }
-      .news-list-article-title {
-        color: $black;
-        font-size: $fontsize-m;
-        line-height: 23px;
-        font-weight: normal;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin: 0;
-        transition: 0.2s ease;
-        &:hover {
-          color: $orange-bistre;
+      .news-list-bg {
+        height: 85px;
+        padding: 20px;
+        border: 1px solid $gray-gainsboro;
+        border-bottom: 0;
+        background-color: $white;
+        list-style-type: none;
+        &-last {
+          border-bottom: 1px solid $gray-gainsboro;
+        }
+
+        .news-list-date {
+          font-size: $fontsize-xs;
+          color: $gray-nobel;
+          display: block;
+          margin-bottom: 10px;
+          line-height: 1;
+        }
+        .news-list-article-title {
+          color: $black;
+          font-size: $fontsize-m;
+          line-height: 23px;
+          font-weight: normal;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin: 0;
+          transition: 0.2s ease;
+          &:hover {
+            color: $orange-bistre;
+          }
         }
       }
     }
