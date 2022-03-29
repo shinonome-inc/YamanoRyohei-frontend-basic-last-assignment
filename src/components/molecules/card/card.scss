@@ -10,15 +10,12 @@
     font-weight: 700;
     color: $orange-bistre;
     font-size: $fontsize-l;
-    &::before {
-      z-index: -1;
-      position: absolute;
-      left: 0;
-      border-width: 75px;
-      border-style: solid;
-      border-color: $white transparent transparent $white;
-      content: "";
-    }
+  }
+  .triangle {
+    background-color: $white;
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
   }
   &-img {
     overflow: hidden;
