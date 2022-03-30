@@ -1,0 +1,51 @@
+@use "../../variables" as *;
+
+.card {
+  border: none;
+  border-radius: 0;
+  &-title {
+    z-index: 1;
+    position: absolute;
+    padding-left: 6px;
+    font-weight: 700;
+    color: $orange-bistre;
+    font-size: $fontsize-l;
+  }
+  .triangle {
+    background-color: $white;
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+  }
+  &-img {
+    overflow: hidden;
+    border-radius: 0;
+    .card-img-top {
+      margin: 0;
+      border-radius: 0;
+      @media screen and (min-width: $grid-breakpoints-md) {
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  &-body {
+    background-color: $white-smoke;
+    padding: 0;
+    .card-text {
+      line-height: 2.4;
+      font-size: $fontsize-s;
+      padding: 32px 46px;
+      margin: 0;
+      @media screen and (min-width: $grid-breakpoints-md) {
+        padding: 32px 35px 30px;
+      }
+    }
+    .card-btn {
+      margin: auto;
+      margin-bottom: 30px;
+    }
+  }
+}
