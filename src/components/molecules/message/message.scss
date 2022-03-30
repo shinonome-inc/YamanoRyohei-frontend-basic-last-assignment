@@ -2,9 +2,9 @@
 
 .message {
   text-align: center;
-  font-family: $fontfamily-mincho;
   color: $black;
   &-title {
+    font-family: $fontfamily-mincho;
     margin-bottom: 10px;
     font-size: $fontsize-l;
     line-height: 30px;
