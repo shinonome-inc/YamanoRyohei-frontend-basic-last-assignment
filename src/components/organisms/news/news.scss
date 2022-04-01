@@ -22,10 +22,6 @@
         &:hover .news-list-article-title {
           color: $orange-bistre;
         }
-        &-last {
-          border-bottom: 1px solid $gray-gainsboro;
-        }
-
         .news-list-date {
           font-size: $fontsize-xs;
           color: $gray-nobel;
@@ -44,6 +40,9 @@
           margin: 0;
           transition: 0.2s ease;
         }
+      }
+      .news-list-bg-last {
+        border-bottom: 1px solid $gray-gainsboro;
       }
     }
   }
