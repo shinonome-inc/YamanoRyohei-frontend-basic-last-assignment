@@ -19,12 +19,18 @@
           transition: 0.2s ease;
         }
         .logo-position {
-          margin: 0 6px;
+          font-size: 14px;
+          height: 14px;
+          width: 14px;
+          margin: 0 7px;
         }
       }
     }
     .message-title {
       margin-bottom: 20px;
+    }
+    .message-content {
+      line-height: 28px;
     }
   }
   .nav-list {
