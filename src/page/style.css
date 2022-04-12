@@ -37,14 +37,19 @@ body {
 }
 .news-and-events-container {
   background-color: #f5f5f5;
-  margin-bottom: 70px;
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 768px) {
+  .news-and-events-container {
+    margin-bottom: 70px;
+  }
 }
 .top-page-content {
   width: 90%;
   margin: 0 auto;
 }
 .news-and-events-container .news-and-events-row {
-  padding: 55.5px 20px 91.5px;
+  padding: 55.5px 0 35px;
 }
 @media screen and (min-width: 768px) {
   .news-and-events-container .news-and-events-row {
@@ -243,7 +248,12 @@ body {
 .about .about-row {
   margin-right: 0;
   margin-left: 0;
-  margin-top: 130px;
+  margin-top: 40px;
+}
+@media screen and (min-width: 768px) {
+  .about .about-row {
+    margin-top: 130px;
+  }
 }
 .about .about-row .about-mv {
   padding: 0;
@@ -251,7 +261,12 @@ body {
 .about .message {
   background-color: #f5f5f5;
   padding: 31.5px 24px 29.5px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .about .message {
+    margin-bottom: 100px;
+  }
 }
 @media screen and (min-width: 992px) {
   .about .message {
