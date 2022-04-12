@@ -1,0 +1,18 @@
+@use "../../variables" as *;
+
+.news-and-events-title {
+  display: flex;
+  align-items: center;
+  &-En {
+    font-family: $fontfamily-mincho;
+    font-size: $fontsize-l;
+    margin-bottom: 0;
+    @media screen and (min-width: $grid-breakpoints-lg) {
+      font-size: $fontsize-xxl;
+    }
+  }
+  &-Ja {
+    margin-left: 16px;
+    font-size: $fontsize-m;
+  }
+}
